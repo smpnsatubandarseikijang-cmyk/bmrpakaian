@@ -3,248 +3,284 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pakaian Kebesaran Adat Melayu Riau – Bahasa Indonesia Kelas 7</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Pakaian Kebesaran Adat Melayu Riau</title>
 <style>
-:root{--bg:#0a0818;--bg2:#15112e;--gold:#f5c542;--neon:#ffe94a;--amber:#ff9f1c;--ink:#fff8e1;--mute:#d9cfa8;--glass:rgba(255,255,255,.08);--line:rgba(255,226,102,.35)}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:'Nunito',system-ui,sans-serif;background:radial-gradient(ellipse at top,#241a4d,var(--bg) 60%) fixed;color:var(--ink);line-height:1.65;overflow-x:hidden}
-h1,h2,h3{font-family:'Baloo 2',system-ui,sans-serif;line-height:1.2}
-#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.hero,nav,main,footer{position:relative;z-index:1}
-.glass{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.35),inset 0 0 24px rgba(255,233,74,.05)}
-.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;padding:32px 16px;overflow:hidden}
-.hero-card{max-width:760px;width:100%;padding:36px 28px;text-align:center}
-.badge{display:inline-block;padding:6px 16px;border-radius:99px;background:rgba(255,233,74,.15);border:1px solid var(--neon);color:var(--neon);font-weight:800;font-size:.9rem}
-.hero h1{font-size:clamp(2rem,7vw,3.8rem);margin:16px 0 10px;color:var(--neon);text-shadow:0 0 10px rgba(255,233,74,.7),0 0 34px rgba(245,197,66,.55)}
-.hero p{color:var(--mute);font-size:1.05rem}
-.meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.meta span{padding:6px 14px;border-radius:99px;background:rgba(245,197,66,.15);font-weight:700;font-size:.9rem}
-.btn{display:inline-block;margin-top:22px;padding:13px 28px;border:0;border-radius:99px;background:linear-gradient(135deg,var(--neon),var(--amber));color:#2a1d00;font:800 1rem 'Nunito',sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 0 22px rgba(255,233,74,.55);transition:transform .2s}
+:root{--bg:#0b0a1a;--bg2:#15122e;--y:#ffe94d;--g:#d4a017;--tx:#fff8e1;--mut:#cfc6a0;--glass:rgba(255,233,77,.08);--bd:rgba(255,215,0,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+.glass{background:var(--glass);border:1px solid var(--bd);border-radius:20px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 8px 32px rgba(0,0,0,.35)}
+.neon{color:var(--y);text-shadow:0 0 8px rgba(255,233,77,.7),0 0 22px rgba(212,160,23,.6)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(11,10,26,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+nav .brand{font-weight:700;color:var(--y);text-decoration:none;white-space:nowrap;margin-right:auto}
+nav ul{display:flex;gap:4px;list-style:none}
+nav a.l{display:block;padding:6px 11px;border-radius:999px;color:var(--tx);text-decoration:none;font-size:.88rem;transition:.2s}
+nav a.l:hover,nav a.l.on{background:var(--y);color:#241c00;box-shadow:0 0 14px rgba(255,233,77,.6)}
+#burger{display:none;background:none;border:1px solid var(--bd);color:var(--y);font-size:1.4rem;border-radius:10px;padding:2px 10px;cursor:pointer}
+@media(max-width:900px){#burger{display:block}nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(11,10,26,.97);padding:10px;border-bottom:1px solid var(--bd)}nav ul.open{display:flex}}
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:90px 16px 50px;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#2a2058 0%,var(--bg) 65%)}
+#stars{position:absolute;inset:0;width:100%;height:100%}
+.deco{position:absolute;width:min(26vw,260px);aspect-ratio:3/4;object-fit:cover;border-radius:18px;border:2px solid var(--bd);box-shadow:0 0 28px rgba(255,215,0,.35);opacity:.9;will-change:transform;animation:float 7s ease-in-out infinite}
+.d1{left:3%;top:18%}.d2{right:3%;bottom:12%;animation-delay:-3.5s;animation-duration:8s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-22px) rotate(2deg)}}
+.hero-box{position:relative;z-index:2;max-width:680px;text-align:center;padding:34px 26px}
+.hero-box .tag{display:inline-block;padding:4px 14px;border-radius:999px;border:1px solid var(--y);color:var(--y);font-size:.85rem;margin-bottom:14px}
+.hero-box h1{font-size:clamp(1.9rem,6vw,3.4rem);margin-bottom:10px}
+.hero-box p{color:var(--mut);margin-bottom:6px}
+.who{margin:14px 0 20px;font-size:.95rem}
+.btn{display:inline-block;padding:11px 24px;border-radius:999px;border:0;background:linear-gradient(135deg,var(--y),var(--g));color:#241c00;font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;box-shadow:0 0 18px rgba(255,233,77,.5);transition:transform .2s}
 .btn:hover{transform:translateY(-3px) scale(1.04)}
-.btn:focus-visible,.tab:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid var(--neon);outline-offset:3px}
-.deco{position:absolute;width:clamp(90px,17vw,200px);height:auto;border-radius:20px;border:2px solid var(--gold);box-shadow:0 0 28px rgba(245,197,66,.5);object-fit:cover;aspect-ratio:3/4;will-change:transform;animation:floaty 7s ease-in-out infinite}
-.d1{left:3%;top:12%}.d2{right:3%;bottom:10%;animation-delay:-3.5s;animation-duration:8s}
-@keyframes floaty{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-22px) rotate(3deg)}}
-@media(max-width:700px){.deco{opacity:.35;width:80px}}
-nav{position:sticky;top:0;z-index:20;padding:10px;background:rgba(10,8,24,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.tabs{display:flex;gap:8px;overflow-x:auto;max-width:1100px;margin:auto;padding-bottom:4px;scrollbar-width:thin}
-.tab{flex:0 0 auto;padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:var(--glass);color:var(--ink);font:700 .95rem 'Nunito',sans-serif;cursor:pointer;white-space:nowrap}
-.tab[aria-selected=true]{background:linear-gradient(135deg,var(--neon),var(--amber));color:#2a1d00;box-shadow:0 0 16px rgba(255,233,74,.5)}
-main{max-width:1000px;margin:auto;padding:24px 14px 60px}
-section{display:none}section.on{display:block;animation:fade .4s}
-@keyframes fade{from{opacity:0}to{opacity:1}}
-h2{font-size:clamp(1.6rem,5vw,2.3rem);color:var(--neon);margin-bottom:16px;text-shadow:0 0 14px rgba(255,233,74,.4)}
-h3{color:var(--gold);font-size:1.3rem;margin-bottom:6px}
-.card{padding:22px;margin-bottom:18px}
-.card ul{padding-left:20px}.card li{margin:5px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.sub{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.warna{display:flex;gap:14px;align-items:flex-start}
-.dot{flex:0 0 46px;height:46px;border-radius:50%;border:2px solid #fff8;box-shadow:0 0 14px currentColor}
-.pic{margin-bottom:26px}
-.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}
-.pics a{display:block;border-radius:18px;overflow:hidden;border:2px solid var(--line);background:#1b1640;min-height:160px}
-.pics img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
-.pics a:hover img{transform:scale(1.05)}
-.abc{display:flex;gap:14px}.abc b{flex:0 0 40px;height:40px;border-radius:12px;background:var(--gold);color:#2a1d00;display:grid;place-items:center;font:800 1.2rem 'Baloo 2'}
+.btn.o{background:transparent;color:var(--y);border:2px solid var(--y);box-shadow:none}
+@media(max-width:700px){.deco{width:30vw;opacity:.45}.d1{top:10%}.d2{bottom:4%}}
+/* SECTIONS */
+section.s{padding:64px 16px;max-width:1050px;margin:auto}
+section.s>h2{font-size:clamp(1.6rem,4.5vw,2.4rem);text-align:center;margin-bottom:8px}
+section.s>.sub{text-align:center;color:var(--mut);margin-bottom:28px}
+.alt{background:var(--bg2);max-width:none!important}.alt>*{max-width:1018px;margin-left:auto;margin-right:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{padding:22px}
+.card h3{color:var(--y);margin-bottom:8px;font-size:1.15rem}
+.card ul{padding-left:20px;color:var(--tx)}
+.card li{margin:4px 0}
+.ico{font-size:2rem;display:block;margin-bottom:6px}
+.note{margin-top:14px;padding:12px 16px;border-left:4px solid var(--y);border-radius:10px;background:rgba(255,233,77,.07)}
+/* warna */
+.wc{padding:18px 18px 18px 78px;position:relative;cursor:pointer;transition:transform .2s}
+.wc:hover{transform:translateY(-4px)}
+.dot{position:absolute;left:18px;top:18px;width:46px;height:46px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 16px var(--c)}
+.wc h3{margin-bottom:4px}.wc .now{display:none;margin-top:8px;font-size:.92rem;color:var(--y)}
+.wc.open .now{display:block}.wc small{color:var(--mut)}
+/* galeri */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:20px}
+.tabs button{padding:8px 16px;border-radius:999px;border:2px solid var(--bd);background:transparent;color:var(--tx);cursor:pointer;font-size:.95rem}
+.tabs button.on{background:var(--y);color:#241c00;border-color:var(--y);font-weight:700}
+#gcap{text-align:center;color:var(--y);margin-bottom:14px;font-weight:700}
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.pics figure{overflow:hidden;border-radius:18px;padding:8px}
+.pics img{width:100%;height:340px;object-fit:cover;border-radius:12px;cursor:zoom-in;transition:transform .3s;background:#1e1a3d}
+.pics img:hover{transform:scale(1.04)}
+#lb{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:92vh;border-radius:12px;border:2px solid var(--y)}
 .center{text-align:center}
-.q{display:block;font-weight:800;margin:16px 0 6px;color:var(--gold)}
-textarea,input[type=text]{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.35);color:var(--ink);font:1rem 'Nunito',sans-serif}
-textarea{min-height:90px;resize:vertical}
-#ok{margin-top:12px;color:var(--neon);font-weight:800;min-height:1.4em}
-footer{text-align:center;padding:24px 14px 40px;color:var(--mute);font-size:.95rem}
-@media(prefers-reduced-motion:reduce){.deco{animation:none}section.on{animation:none}}
+.act{padding:34px 22px;text-align:center;max-width:640px;margin:auto}
+.act p{color:var(--mut);margin:8px 0 18px}
+/* refleksi */
+.fq{margin-bottom:16px}.fq label{display:block;font-weight:700;color:var(--y);margin-bottom:6px}
+textarea,input[type=text]{width:100%;padding:12px;border-radius:12px;border:1px solid var(--bd);background:rgba(0,0,0,.35);color:var(--tx);font:inherit;resize:vertical}
+textarea:focus,input:focus{outline:2px solid var(--y)}
+footer{text-align:center;padding:26px 14px;color:var(--mut);border-top:1px solid var(--bd);font-size:.9rem}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.deco{animation:none}.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<canvas id="stars" aria-hidden="true"></canvas>
+<nav>
+  <a class="brand" href="#hero">✨ Budaya Melayu Riau</a>
+  <button id="burger" aria-label="Menu">☰</button>
+  <ul id="menu">
+    <li><a class="l" href="#materi">1 Pengertian</a></li>
+    <li><a class="l" href="#warna">2 Makna Warna</a></li>
+    <li><a class="l" href="#gambar">3 Gambar</a></li>
+    <li><a class="l" href="#video">4 Video</a></li>
+    <li><a class="l" href="#lkm">5 LKM</a></li>
+    <li><a class="l" href="#kuis">6 Kuis</a></li>
+    <li><a class="l" href="#refleksi">7 Refleksi</a></li>
+  </ul>
+</nav>
 
-<header class="hero">
-  <img class="deco d1" alt="Hiasan pakaian adat Melayu" src="https://drive.google.com/thumbnail?id=1L9shyr4Rnh6NnSz0778i8UzsWWOOgZIU&sz=w600" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-  <img class="deco d2" alt="Hiasan pakaian adat Melayu" src="https://drive.google.com/thumbnail?id=14b0GeYIChtxr2O3L0PS8eY-5fZZPTKuh&sz=w600" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-  <div class="hero-card glass">
-    <span class="badge">✨ Bahasa Indonesia · Kelas 7</span>
-    <h1>Pakaian Kebesaran Adat Melayu Riau</h1>
-    <p>Yuk, kenali pakaian, perlengkapan, dan makna warnanya!</p>
-    <div class="meta"><span>🏫 SMPN 1 Bandar Seikijang</span><span>👩‍🏫 Ertika, S.Pd.I</span></div>
-    <a class="btn" href="#menu" data-go="pembuka">Mulai Belajar</a>
+<header id="hero">
+  <canvas id="stars"></canvas>
+  <img class="deco d1" data-id="1L9shyr4Rnh6NnSz0778i8UzsWWOOgZIU" alt="Hiasan pakaian adat Melayu Riau" loading="lazy">
+  <img class="deco d2" data-id="14b0GeYIChtxr2O3L0PS8eY-5fZZPTKuh" alt="Hiasan pakaian adat Melayu Riau" loading="lazy">
+  <div class="hero-box glass">
+    <span class="tag">Budaya Melayu Riau • Kelas 8</span>
+    <h1 class="neon">Pakaian Kebesaran Adat Melayu Riau</h1>
+    <p>Yuk, kenali pakaian adat kebanggaan kita beserta makna warnanya!</p>
+    <p class="who">SMPN 1 Bandar Seikijang<br>Guru: <b>Ertika, S.Pd.I</b></p>
+    <a class="btn" href="#pembuka">Mulai Belajar 🚀</a>
   </div>
 </header>
 
-<nav id="menu"><div class="tabs" role="tablist">
-  <button class="tab" role="tab" data-t="pembuka">1. Pembuka</button>
-  <button class="tab" role="tab" data-t="materi">2. Materi</button>
-  <button class="tab" role="tab" data-t="gambar">3. Gambar Pakaian</button>
-  <button class="tab" role="tab" data-t="video">4. Video</button>
-  <button class="tab" role="tab" data-t="lkm">5. LKM</button>
-  <button class="tab" role="tab" data-t="kuis">6. Kuis</button>
-  <button class="tab" role="tab" data-t="refleksi">7. Refleksi</button>
-</div></nav>
-
-<main>
-<!-- 1 PEMBUKA -->
-<section id="pembuka">
-  <h2>Pembuka</h2>
-  <div class="card glass abc"><b>A</b><div><h3>Keyakinan Kelas</h3><p>Membersihkan sampah di kelas, merapikan alat tulis, dan merapikan pakaian.</p></div></div>
-  <div class="card glass abc"><b>B</b><div><h3>Absensi</h3><p>Isi daftar hadir dulu ya!</p><a class="btn" target="_blank" rel="noopener" href="https://forms.gle/HpiCRsNRUWa9fMW99">📝 Isi Absensi</a></div></div>
-  <div class="card glass abc"><b>C</b><div><h3>Apersepsi</h3><p>Kita telah mempelajari pelajaran minggu lalu tentang <b>makna dan jenis-jenis pakaian Melayu</b>. Hari ini kita akan belajar <b>warna pakaian kebesaran adat Melayu Riau</b>.</p></div></div>
-  <div class="card glass abc"><b>D</b><div><h3>Tujuan Pembelajaran</h3><p>Murid mampu mengidentifikasi pakaian kebesaran adat Melayu Riau.</p></div></div>
-  <div class="card glass abc"><b>E</b><div><h3>Penilaian Dimensi Profil Lulusan</h3>
-    <ul><li><b>Penalaran Kritis</b> – berpikir logis, analitis, dan reflektif dalam menghadapi berbagai persoalan.</li>
-    <li><b>Kolaborasi</b> – gotong royong, bekerja sama, dan berbagi peran secara efektif dengan orang lain.</li>
-    <li><b>Komunikasi</b> – berkomunikasi secara intrapribadi maupun antarpribadi, lisan maupun tulisan, menggunakan moda verbal maupun nonverbal.</li></ul></div></div>
-</section>
-
-<!-- 2 MATERI -->
-<section id="materi">
-  <h2>Materi</h2>
-  <div class="sub">
-    <button class="tab" data-s="s1" aria-selected="true">Pengertian & Jenis</button>
-    <button class="tab" data-s="s2">Makna Warna</button>
+<section class="s" id="pembuka">
+  <h2 class="neon">Pembuka</h2>
+  <p class="sub">Siapkan diri sebelum belajar</p>
+  <div class="grid">
+    <div class="glass card reveal"><span class="ico">🧹</span><h3>A. Keyakinan Kelas</h3><p>Membersihkan sampah di kelas, merapikan alat tulis, dan merapikan pakaian.</p></div>
+    <div class="glass card reveal"><span class="ico">📝</span><h3>B. Absensi</h3><p style="margin-bottom:12px">Isi daftar hadir lebih dulu ya.</p><a class="btn" href="https://forms.gle/HpiCRsNRUWa9fMW99" target="_blank" rel="noopener">Isi Absensi</a></div>
+    <div class="glass card reveal"><span class="ico">💭</span><h3>C. Apersepsi</h3><p>Kita telah mempelajari pelajaran minggu lalu tentang <b>makna dan jenis-jenis pakaian Melayu</b>. Hari ini kita akan belajar <b>warna pakaian kebesaran adat Melayu Riau</b>.</p></div>
+    <div class="glass card reveal"><span class="ico">🎯</span><h3>D. Tujuan Pembelajaran</h3><p>Murid mampu mengidentifikasi pakaian kebesaran adat Melayu Riau.</p></div>
   </div>
-  <div id="s1" class="sp">
-    <div class="card glass"><h3>Pakaian Kebesaran Adat Melayu Riau</h3><p>Merupakan wujud simbolis dari etika, status sosial, nilai budaya, serta syariat Islam yang bersendikan kitabullah.</p></div>
-    <div class="grid">
-      <div class="card glass"><h3>👨 Laki-Laki</h3>
-        <p><b>Jenis baju:</b> Baju Kurung Cekak Musang (kerah tinggi sekitar 2,5 cm, kancing di leher) atau Baju Kurung Teluk Belanga (kerah rendah selebar dua jari, lima kancing).</p>
-        <ul><li><b>Kain samping / songket:</b> dililitkan di pinggang, menutupi paha hingga lutut.</li>
-        <li><b>Tanjak / tengkolok:</b> penutup kepala dengan banyak lipatan bernama dan bermakna (balung ayam, belah mumbang).</li>
-        <li><b>Keris:</b> lambang kehormatan, kewibawaan, dan keberanian.</li>
-        <li><b>Selop:</b> alas kaki tradisional.</li></ul></div>
-      <div class="card glass"><h3>👩 Perempuan</h3>
-        <p><b>Jenis baju:</b> Baju Kurung Labuh atau Baju Kebaya Labuh, longgar dan tidak menonjolkan lekuk tubuh.</p>
-        <ul><li><b>Tudung mente / tudung lingkup:</b> kerudung atau selendang penutup kepala dengan tata cara pakai khusus.</li>
-        <li><b>Sanggul:</b> sanggul lipat pandan, jonget, atau lintang yang ditutupi kerudung.</li>
-        <li><b>Perhiasan:</b> dokoh (perhiasan dada), gelang, anting-anting, dan pending (ikat pinggang logam).</li></ul></div>
-    </div>
-    <div class="card glass"><h3>📘 Teks Prosedur</h3><p>Teks yang berisi petunjuk, tahapan, atau metode untuk menyelesaikan suatu kegiatan atau memecahkan masalah secara berurutan dan logis.</p></div>
-  </div>
-  <div id="s2" class="sp" hidden>
-    <p style="margin-bottom:14px;color:var(--mute)">Warna pakaian adat Melayu Riau punya aturan tingkatan dan makna simbolis.</p>
-    <div class="grid" id="warna"></div>
+  <div class="glass card reveal" style="margin-top:16px">
+    <h3>E. Penilaian Dimensi Profil Lulusan</h3>
+    <ul>
+      <li><b>Penalaran Kritis</b> – mampu berpikir secara logis, analitis, dan reflektif dalam menghadapi berbagai persoalan.</li>
+      <li><b>Kolaborasi</b> – memiliki kemampuan gotong royong, bekerja sama, serta berbagi peran secara efektif dengan orang lain.</li>
+      <li><b>Komunikasi</b> – mampu berkomunikasi secara intrapribadi maupun antarpribadi, lisan maupun tulisan, dengan moda verbal maupun nonverbal.</li>
+    </ul>
   </div>
 </section>
 
-<!-- 3 GAMBAR -->
-<section id="gambar">
-  <h2>Gambar Pakaian</h2>
-  <p style="margin-bottom:14px;color:var(--mute)">Ketuk gambar untuk melihat ukuran penuh.</p>
-  <div id="galeri"></div>
+<section class="s alt" id="materi">
+  <h2 class="neon">1. Pengertian dan Jenis-Jenis Pakaian</h2>
+  <p class="sub">Klik tombol untuk memilih pakaian laki-laki atau perempuan</p>
+  <div class="glass card reveal"><h3>Pakaian Kebesaran Adat Melayu Riau</h3><p>Merupakan wujud simbolis dari etika, status sosial, nilai budaya, serta syariat Islam yang bersendikan kitabullah.</p></div>
+  <div class="tabs" style="margin-top:20px" id="gtab">
+    <button class="on" data-t="l">👨 Laki-Laki</button><button data-t="p">👩 Perempuan</button>
+  </div>
+  <div id="pl" class="glass card">
+    <h3>Pakaian Kebesaran Laki-Laki</h3>
+    <p><b>Jenis baju:</b> Baju Kurung <b>Cekak Musang</b> (kerah tinggi sekitar 2,5 cm dengan kancing di leher) atau Baju Kurung <b>Teluk Belanga</b> (kerah rendah selebar dua jari dengan lima kancing).</p>
+    <p style="margin-top:8px"><b>Perlengkapan utama:</b></p>
+    <ul>
+      <li><b>Kain Samping / Songket</b> – dililitkan di pinggang menutupi paha hingga lutut.</li>
+      <li><b>Tanjak / Tengkolok</b> – penutup kepala khas Melayu dengan berbagai lipatan bernama dan bermakna (misalnya balung ayam atau belah mumbang).</li>
+      <li><b>Keris</b> – diselipkan di depan atau samping sebagai lambang kehormatan, kewibawaan, dan keberanian.</li>
+      <li><b>Selop</b> – alas kaki tradisional.</li>
+    </ul>
+  </div>
+  <div id="pp" class="glass card" style="display:none">
+    <h3>Pakaian Kebesaran Perempuan</h3>
+    <p><b>Jenis baju:</b> Baju Kurung <b>Labuh</b> atau Baju Kebaya <b>Labuh</b>, dirancang longgar dan tidak menonjolkan lekuk tubuh.</p>
+    <p style="margin-top:8px"><b>Perlengkapan utama:</b></p>
+    <ul>
+      <li><b>Tudung Mente / Tudung Lingkup</b> – kerudung atau selendang penutup kepala dengan tata cara pakai khusus (misalnya dilipat dan dijepit di pinggang saat masuk ruangan).</li>
+      <li><b>Sanggul</b> – rambut ditata dengan sanggul tradisional Melayu (lipat pandan, jonget, atau lintang) yang ditutupi kerudung.</li>
+      <li><b>Perhiasan</b> – dokoh (perhiasan dada), gelang, anting-anting, dan pending (ikat pinggang logam).</li>
+    </ul>
+  </div>
 </section>
 
-<!-- 4 VIDEO -->
-<section id="video">
-  <h2>Video</h2>
-  <div class="card glass center"><p style="font-size:3rem">🎬</p><h3>Tonton Video Pembelajaran</h3><p>Video akan terbuka di tab baru.</p>
-  <a class="btn" target="_blank" rel="noopener" href="https://www.tiktok.com/@anggi_mua/video/7120729088335072538?is_from_webapp=1&sender_device=pc">▶ Putar Video</a></div>
+<section class="s" id="warna">
+  <h2 class="neon">2. Makna Warna</h2>
+  <p class="sub">Warna punya aturan dan makna. Klik kartu untuk melihat penggunaannya sekarang!</p>
+  <div class="grid" id="wgrid"></div>
 </section>
 
-<!-- 5 LKM -->
-<section id="lkm">
-  <h2>LKM (Lembar Kerja Murid)</h2>
-  <p style="margin-bottom:14px;color:var(--mute)">Ketuk lembar kerja untuk membuka, lalu kerjakan bersama kelompokmu.</p>
+<section class="s alt" id="gambar">
+  <h2 class="neon">3. Gambar Pakaian</h2>
+  <p class="sub">Pilih warna, lalu klik gambar untuk memperbesar</p>
+  <div class="tabs" id="gtabs"></div>
+  <p id="gcap"></p>
+  <div class="pics" id="pics"></div>
+</section>
+
+<section class="s" id="video">
+  <h2 class="neon">4. Video</h2>
+  <p class="sub">Tonton video pembelajaran</p>
+  <div class="glass act reveal"><span class="ico" style="font-size:3rem">🎬</span><h3>Video Pakaian Adat Melayu</h3><p>Video akan terbuka di TikTok pada tab baru.</p>
+    <a class="btn" href="https://www.tiktok.com/@anggi_mua/video/7120729088335072538?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">▶ Tonton Video</a></div>
+</section>
+
+<section class="s alt" id="lkm">
+  <h2 class="neon">5. LKM</h2>
+  <p class="sub">Lembar Kerja Murid – klik gambar untuk memperbesar, kerjakan bersama kelompokmu</p>
   <div class="pics" id="lkmpics"></div>
 </section>
 
-<!-- 6 KUIS -->
-<section id="kuis">
-  <h2>Kuis</h2>
-  <div class="card glass center"><p style="font-size:3rem">🏆</p><h3>Uji Pemahamanmu!</h3><p>Kerjakan kuis interaktif Genially.</p>
-  <a class="btn" target="_blank" rel="noopener" href="https://view.genially.com/6af907288a92068d277ab92d">🎮 Mulai Kuis</a></div>
+<section class="s" id="kuis">
+  <h2 class="neon">6. Kuis</h2>
+  <p class="sub">Uji pemahamanmu!</p>
+  <div class="glass act reveal"><span class="ico" style="font-size:3rem">🏆</span><h3>Kuis Interaktif</h3><p>Jawab pertanyaan dan lihat seberapa paham kamu tentang pakaian adat Melayu Riau.</p>
+    <a class="btn" href="https://view.genially.com/6af907288a92068d277ab92d" target="_blank" rel="noopener">Mulai Kuis</a></div>
 </section>
 
-<!-- 7 REFLEKSI -->
-<section id="refleksi">
-  <h2>Refleksi</h2>
-  <div class="card glass">
-    <label class="q" for="nm">Nama</label><input type="text" id="nm" placeholder="Tulis namamu">
-    <label class="q" for="r1">a. Apakah hari ini kamu menemukan pengetahuan baru?</label><textarea id="r1"></textarea>
-    <label class="q" for="r2">b. Adakah kesulitan dalam memahami materi hari ini? Sebutkan.</label><textarea id="r2"></textarea>
-    <label class="q" for="r3">c. Saran untuk materi selanjutnya.</label><textarea id="r3"></textarea>
-    <button class="btn" id="kirim">📋 Salin Jawaban</button>
-    <p id="ok" role="status"></p>
+<section class="s alt" id="refleksi">
+  <h2 class="neon">7. Refleksi</h2>
+  <p class="sub">Ceritakan pengalaman belajarmu hari ini</p>
+  <div class="glass card" style="max-width:720px;margin:auto">
+    <div class="fq"><label for="n">Nama</label><input type="text" id="n" placeholder="Nama kamu"></div>
+    <div class="fq"><label for="r1">a. Apakah hari ini menemukan pengetahuan baru?</label><textarea id="r1" rows="3"></textarea></div>
+    <div class="fq"><label for="r2">b. Adakah kesulitan dalam memahami materi hari ini? Sebutkan…</label><textarea id="r2" rows="3"></textarea></div>
+    <div class="fq"><label for="r3">c. Saran untuk materi selanjutnya…</label><textarea id="r3" rows="3"></textarea></div>
+    <div class="center"><button class="btn" id="cp">Salin Jawaban 📋</button> <p id="ok" style="margin-top:10px;color:var(--y);min-height:1.6em"></p></div>
   </div>
 </section>
-</main>
 
-<footer>© Ertika, S.Pd.I · SMPN 1 Bandar Seikijang · Bahasa Indonesia Kelas 7</footer>
+<footer>© Media Pembelajaran Budaya Melayu Riau • SMPN 1 Bandar Seikijang • Guru: Ertika, S.Pd.I</footer>
+<div id="lb"><img alt=""></div>
 
 <script>
-// ===== Data =====
-const D=id=>'https://drive.google.com/thumbnail?id='+id+'&sz=w1000';
-const WARNA=[
- ['#f5c542','Kuning Keemasan','Lambang kekuasaan dan kebesaran tertinggi, khusus Sultan, raja, atau pimpinan daerah. Dulu dilarang dipakai rakyat biasa; kini dipakai untuk resepsi pengantin dan acara formal.'],
- ['#5b7a2f','Hijau Lumut / Hijau','Melambangkan kesuburan, kesetiaan, serta identitas kaum alim ulama, ilmuwan, atau bangsawan tertentu.'],
- ['#2f6fe0','Biru','Melambangkan para laksamana di langit atau tentara laut Kerajaan.'],
- ['#e63946','Merah','Melambangkan keberanian dan pertalian persaudaraan/darah. Kini dipakai sebagai seragam keluarga yang mengadakan acara.'],
- ['#222','Hitam','Melambangkan ketabahan dan kewibawaan, dipakai pemangku adat atau hulubalang. Kini dipakai untuk pakaian keamanan dan panitia acara.'],
- ['#fff','Putih','Melambangkan kesucian dan kemurnian. Kini dipakai di syukuran kelahiran, khitan, akad nikah, dan acara keagamaan.']];
-const GAL=[
- ['Kuning','Untuk raja, pimpinan, resepsi pengantin, khitanan',['1KLsIWwomcNSWKPLe0pAfaH4uPsuAII-e','1TBqLZD8bjIpOfjSvfv0zvinOG9S8RC4h']],
- ['Hijau Lumut / Hijau','Kaum alim, ilmuwan, atau bangsawan',['1kPWOplsl2fiQ4p8oTA9qpAWc9VcMgpw1','1H54vTUkWYjde17fKVL1Hk5FVO6GO7zmk']],
- ['Biru','Para laksamana kerajaan atau tentara udara dan laut',['16p62mLN5JtikE7TQ_lZfVtN1f8xDsJ8l','13vDbj9pDPUyepBVCIRm9r8lsiSO5FoKA']],
- ['Merah','Anggota keluarga yang mengadakan pesta',['1GJTVdkpBtjXtRDRBnhHHLWn8BYwWe4oj','1fOGne82Ss6i2AW8VubNFGZ_UgTYHqF4A']],
- ['Hitam','Hulubalang dan penjaga keamanan',['1xyToy9QMyslcmwgyFZsX9rCeTV1mNBz3','1qbzKrJhmXqkavgM9W_rLK_25ElrgQFXm']],
- ['Putih','Ulama dan acara keagamaan',['1lCqMxnfVu_LtRVyHkmbokI3_hj_Ypeb_','1rcmY2Joyhy7T5e0E3Zbqo1gP7NBV3QI5']]];
-const LKM=['1q8jpKxI8bTNvDB0qAMQy3RvyCKEZWkhN','12VDdsUZbPF5CAp7aVD-HcEU_nk_Nk17x'];
-const pic=(id,alt)=>`<a href="https://drive.google.com/file/d/${id}/view" target="_blank" rel="noopener"><img loading="lazy" alt="${alt}" src="${D(id)}" referrerpolicy="no-referrer"></a>`;
+const $=s=>document.querySelector(s);
+const src=id=>"https://drive.google.com/thumbnail?id="+id+"&sz=w1000";
+function mk(id,alt){const i=new Image();i.loading="lazy";i.alt=alt;i.src=src(id);i.onerror=()=>{i.onerror=null;i.src="https://drive.google.com/uc?export=view&id="+id};i.onclick=()=>{$("#lb img").src=i.src;$("#lb").classList.add("on")};return i}
+$("#lb").onclick=()=>$("#lb").classList.remove("on");
+document.querySelectorAll(".deco").forEach(e=>{e.src=src(e.dataset.id);e.onerror=()=>{e.onerror=null;e.src="https://drive.google.com/uc?export=view&id="+e.dataset.id}});
 
-document.getElementById('warna').innerHTML=WARNA.map(w=>`<div class="card glass warna"><span class="dot" style="background:${w[0]};color:${w[0]}"></span><div><h3>${w[1]}</h3><p>${w[2]}</p></div></div>`).join('');
-document.getElementById('galeri').innerHTML=GAL.map((g,i)=>`<div class="card glass pic"><h3>${String.fromCharCode(65+i)}. ${g[0]}</h3><p>${g[1]}</p><div class="pics">${g[2].map((id,j)=>pic(id,'Pakaian adat warna '+g[0]+' '+(j+1))).join('')}</div></div>`).join('');
-document.getElementById('lkmpics').innerHTML=LKM.map((id,j)=>pic(id,'Lembar kerja murid '+(j+1))).join('');
+/* menu */
+$("#burger").onclick=()=>$("#menu").classList.toggle("open");
+document.querySelectorAll("#menu a").forEach(a=>a.onclick=()=>$("#menu").classList.remove("open"));
+const links=[...document.querySelectorAll("#menu a")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+links.forEach(a=>{const t=$(a.getAttribute("href"));t&&so.observe(t)});
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");ro.unobserve(e.target)}}),{threshold:.12});
+function obs(){document.querySelectorAll(".reveal").forEach(e=>ro.observe(e))}
 
-// ===== Navigasi =====
-const tabs=[...document.querySelectorAll('nav .tab')],secs=[...document.querySelectorAll('main > section')];
-function go(id,scroll){
-  tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.t===id));
-  secs.forEach(s=>s.classList.toggle('on',s.id===id));
-  if(scroll)document.getElementById('menu').scrollIntoView({behavior:'smooth'});
-}
-tabs.forEach(t=>t.onclick=()=>go(t.dataset.t,true));
-document.querySelector('[data-go]').onclick=e=>{e.preventDefault();go('pembuka',true)};
-document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('[data-s]').forEach(x=>x.setAttribute('aria-selected',x===b));
-  document.querySelectorAll('.sp').forEach(p=>p.hidden=p.id!==b.dataset.s);
-});
-go('pembuka');
+/* jenis pakaian */
+document.querySelectorAll("#gtab button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("#gtab button").forEach(x=>x.classList.toggle("on",x===b));
+  $("#pl").style.display=b.dataset.t==="l"?"":"none";$("#pp").style.display=b.dataset.t==="p"?"":"none"});
 
-// ===== Refleksi =====
-document.getElementById('kirim').onclick=async()=>{
-  const v=id=>document.getElementById(id).value.trim()||'-';
-  const t=`REFLEKSI – Pakaian Kebesaran Adat Melayu Riau\nNama: ${v('nm')}\na. Pengetahuan baru: ${v('r1')}\nb. Kesulitan: ${v('r2')}\nc. Saran: ${v('r3')}`;
-  const ok=document.getElementById('ok');
-  try{await navigator.clipboard.writeText(t);ok.textContent='Tersalin! Kirimkan ke gurumu ya 😊'}
-  catch(e){ok.textContent='Salin manual: tekan dan tahan teks jawabanmu.'}
-};
+/* warna */
+const W=[
+["Kuning Keemasan","#ffd42a","Lambang kekuasaan dan kebesaran tertinggi. Secara tradisional khusus bagi Sultan, raja, atau pimpinan daerah; rakyat biasa dilarang memakainya.","Sekarang: acara resepsi pengantin dan acara formal lainnya."],
+["Hijau Lumut / Hijau","#4f8a3c","Melambangkan kesuburan, kesetiaan, serta identitas kaum alim ulama, ilmuwan, atau bangsawan tertentu.","Dipakai oleh kaum alim, ilmuwan, atau bangsawan."],
+["Biru","#2f6fe0","Melambangkan para laksamana di langit atau tentara laut Kerajaan.","Dipakai laksamana kerajaan, tentara udara dan laut."],
+["Merah","#e0312f","Melambangkan keberanian dan pertalian persaudaraan / darah.","Sekarang: baju seragam keluarga yang mengadakan acara."],
+["Hitam","#222","Melambangkan ketabahan dan kewibawaan; kerap dipakai pemangku adat atau hulubalang.","Sekarang: pakaian keamanan dan panitia acara."],
+["Putih","#f4f4f4","Melambangkan kesucian dan kemurnian.","Sekarang: syukuran kelahiran, khitan, akad nikah, dan acara keagamaan lainnya."]];
+W.forEach(([n,c,m,k])=>{const d=document.createElement("div");d.className="glass wc reveal";d.style.setProperty("--c",c);
+ d.innerHTML='<span class="dot" style="background:'+c+'"></span><h3 class="neon">'+n+'</h3><p>'+m+'</p><p class="now">✨ '+k+'</p><small>Klik untuk info penggunaan</small>';
+ d.onclick=()=>d.classList.toggle("open");$("#wgrid").appendChild(d)});
 
-// ===== Partikel bintang jatuh (ringan) =====
+/* galeri */
+const G=[
+["Kuning","Untuk raja, pimpinan, dan resepsi pengantin, khitanan",["1KLsIWwomcNSWKPLe0pAfaH4uPsuAII-e","1TBqLZD8bjIpOfjSvfv0zvinOG9S8RC4h"]],
+["Hijau","Kaum alim, ilmuwan, atau bangsawan",["1kPWOplsl2fiQ4p8oTA9qpAWc9VcMgpw1","1H54vTUkWYjde17fKVL1Hk5FVO6GO7zmk"]],
+["Biru","Para laksamana kerajaan atau tentara udara dan laut",["16p62mLN5JtikE7TQ_lZfVtN1f8xDsJ8l","13vDbj9pDPUyepBVCIRm9r8lsiSO5FoKA"]],
+["Merah","Anggota keluarga yang mengadakan pesta",["1GJTVdkpBtjXtRDRBnhHHLWn8BYwWe4oj","1fOGne82Ss6i2AW8VubNFGZ_UgTYHqF4A"]],
+["Hitam","Hulubalang dan penjaga keamanan",["1xyToy9QMyslcmwgyFZsX9rCeTV1mNBz3","1qbzKrJhmXqkavgM9W_rLK_25ElrgQFXm"]],
+["Putih","Ulama dan acara keagamaan",["1lCqMxnfVu_LtRVyHkmbokI3_hj_Ypeb_","1rcmY2Joyhy7T5e0E3Zbqo1gP7NBV3QI5"]]];
+function show(k){
+ document.querySelectorAll("#gtabs button").forEach((b,i)=>b.classList.toggle("on",i===k));
+ const [n,c,ids]=G[k];$("#gcap").textContent="Warna "+n+": "+c;
+ const p=$("#pics");p.innerHTML="";
+ ids.forEach((id,i)=>{const f=document.createElement("figure");f.className="glass";f.appendChild(mk(id,"Pakaian adat warna "+n+" "+(i+1)));p.appendChild(f)})}
+G.forEach((g,i)=>{const b=document.createElement("button");b.textContent=g[0];b.onclick=()=>show(i);$("#gtabs").appendChild(b)});
+show(0);
+["1q8jpKxI8bTNvDB0qAMQy3RvyCKEZWkhN","12VDdsUZbPF5CAp7aVD-HcEU_nk_Nk17x"].forEach((id,i)=>{const f=document.createElement("figure");f.className="glass";f.appendChild(mk(id,"LKM halaman "+(i+1)));$("#lkmpics").appendChild(f)});
+
+/* refleksi */
+$("#cp").onclick=()=>{
+ const t="REFLEKSI - Pakaian Kebesaran Adat Melayu Riau\nNama: "+$("#n").value+"\na. Pengetahuan baru: "+$("#r1").value+"\nb. Kesulitan: "+$("#r2").value+"\nc. Saran: "+$("#r3").value;
+ const done=m=>$("#ok").textContent=m;
+ (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>done("Jawaban tersalin! Kirim ke gurumu ya 😊")).catch(()=>{const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");done("Jawaban tersalin! Kirim ke gurumu ya 😊")}catch(e){done("Salin manual dari kolom di atas.")}a.remove()})};
+
+/* bintang jatuh (ringan) */
 (()=>{
-  const c=document.getElementById('stars'),x=c.getContext('2d');
-  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  let W,H,P=[],run=true,last=0;
-  const N=()=>Math.min(70,Math.round(innerWidth/18));
-  function size(){const r=Math.min(devicePixelRatio||1,1.5);W=c.width=innerWidth*r;H=c.height=innerHeight*r;P=Array.from({length:N()},()=>mk(true))}
-  function mk(init){const r=Math.min(devicePixelRatio||1,1.5);return{x:Math.random()*W,y:init?Math.random()*H:-10,s:(Math.random()*2+1)*r,v:(Math.random()*.6+.3)*r,w:Math.random()*Math.PI*2,gold:Math.random()<.5}}
-  function frame(t){
-    if(!run)return;requestAnimationFrame(frame);
-    if(t-last<33)return;last=t;      // ~30 FPS agar ringan
-    x.clearRect(0,0,W,H);
-    for(const p of P){
-      p.y+=p.v;p.w+=.03;p.x+=Math.sin(p.w)*.4;
-      if(p.y>H+10){Object.assign(p,mk(false),{x:Math.random()*W})}
-      const a=.5+.5*Math.sin(p.w*2);
-      x.globalAlpha=.35+a*.65;x.fillStyle=p.gold?'#f5c542':'#fff06a';
-      x.shadowColor=x.fillStyle;x.shadowBlur=p.s*3;
-      x.beginPath();x.arc(p.x,p.y,p.s,0,6.283);x.fill();
-    }
-  }
-  addEventListener('resize',size);size();
-  if(reduce){frame(0);run=false;return}
-  document.addEventListener('visibilitychange',()=>{run=!document.hidden;if(run)requestAnimationFrame(frame)});
-  requestAnimationFrame(frame);
+ const cv=$("#stars"),cx=cv.getContext("2d"),hero=$("#hero");
+ const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+ let w,h,S=[],run=true,vis=true,last=0;
+ function size(){w=cv.width=hero.clientWidth;h=cv.height=hero.clientHeight;
+  const n=w<700?26:55;S=[];for(let i=0;i<n;i++)S.push(mk2(true))}
+ function mk2(r){return{x:Math.random()*w,y:r?Math.random()*h:-10,r:Math.random()*2+.8,v:Math.random()*.6+.3,d:Math.random()*.4-.2,t:Math.random()*6.28,c:Math.random()<.35?"#ffd36b":"#fff27a"}}
+ function draw(ts){
+  if(run&&vis){
+   if(ts-last>33){last=ts;cx.clearRect(0,0,w,h);
+    for(const s of S){s.y+=s.v;s.x+=s.d;s.t+=.05;
+     if(s.y>h+10)Object.assign(s,mk2(false));
+     cx.globalAlpha=.45+.45*Math.sin(s.t);cx.fillStyle=s.c;
+     cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.283);cx.fill();
+     cx.globalAlpha*=.25;cx.fillRect(s.x-.5,s.y-s.r*7,1,s.r*7)}}
+   if(!reduce)requestAnimationFrame(draw)}}
+ new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis&&!reduce)requestAnimationFrame(draw)}).observe(hero);
+ document.addEventListener("visibilitychange",()=>{run=!document.hidden;if(run&&!reduce)requestAnimationFrame(draw)});
+ let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(size,200)});
+ size();requestAnimationFrame(draw);if(reduce)draw(100);
 })();
+obs();
 </script>
 </body>
 </html>
